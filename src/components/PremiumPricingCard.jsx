@@ -11,7 +11,7 @@ const PremiumPricingCard = ({
 }) => {
   return (
     <div
-      className={`relative flex flex-col p-8 rounded-3xl border  duration-300 hover:scale-105  shadow-xl 
+      className={`relative flex flex-col p-5 rounded-3xl border  duration-300 hover:scale-105 shadow-xl 
       ${
         isPopular
           ? 'border-yellow-500 ring-4 ring-yellow-500/10 bg-white'
@@ -26,8 +26,8 @@ const PremiumPricingCard = ({
       )}
 
       <h3 className="text-2xl font-bold text-gray-900">{title}</h3>
-      <div className="mt-2 mb-8">
-        <p className=" text-sm text-gray-500 min-h-[60px]">{decs}</p>
+      <div className="mt-2 mb-4">
+        <p className=" text-sm text-gray-400 mb-2">{decs}</p>
         <span className="text-4xl font-extrabold">${price}</span>
         <span className="text-gray-500 font-medium">{period}</span>
       </div>
